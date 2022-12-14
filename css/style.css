@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2 family=Hahmlet:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+html{
+  display:flex;
+  flex-direction:colum;
+  align-items:center;
+  justify-content:center;
+}
 
 * {
-	font-family: 'Hahmlet', serif;
+	font-family: 'Gowun Dodum', sans-serif;
 }
 
 .title{
-  background-color:tomato;
+  background-color:#90CD8A;
   color: white;
   font-size:24px;
   padding:4px 14px;
@@ -14,26 +21,77 @@
 
 .bg{
   width: 360px;
-  background-image : url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+  background-color:#C5E8C2;
+  background-size:cover;
+  background-position:center;
+  margin:auto;
 }
 
-  .msg{
-    font-weight:bold;
-  }
+.msg{
+  font-weight:bold;
+  margin: 0px 0px 30px;
+}
 
 .bucket{
   width:160px;
   height:160px;
+  background-size: cover;
+  background-position: center;
+  margin:8px;
+  position:relative;
+
+  font-size:16px;
+  text-align:center;
+  word-break:keep-all;
+  font-weight:bold;
 }
 
 .img1{
-  background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-  background-size: cover;
-  background-position: center;
+  background:url("/img/leftimg1.png");
 }
 
 .img2{
-  background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-  background-size: cover;
-  background-position: center;
+  background:url("/img/rightimg1.png");
+}
+
+.img3{
+  background:url("/img/leftimg2.png");
+}
+
+.img4{
+  background:url("/img/rightimg2.png");
+}
+
+.img5{
+  background:url("/img/leftimg3.png");
+}
+
+.img6{
+  background:url("/img/rightimg3.png");
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.done::after{
+  content:"";
+  width:70%;
+  height:70%;
+  background:url("/img/complete.png");
+  background-size:cover;
+  background-position:center;
+  position:absolute;
+  top:20%;
 }
